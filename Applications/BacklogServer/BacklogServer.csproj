@@ -6,6 +6,7 @@
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>
+   <PackageReference Include="Steeltoe.Security.Authentication.CloudFoundryCore" Version="2.1.1" />
    <PackageReference Include="Steeltoe.CircuitBreaker.HystrixCore" Version="2.1.1" />
    <PackageReference Include="Steeltoe.CircuitBreaker.Hystrix.MetricsStreamCore" Version="2.1.1" />
    <PackageReference Include="RabbitMQ.Client" Version="5.1.0" />
