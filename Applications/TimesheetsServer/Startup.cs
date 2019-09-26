@@ -9,6 +9,7 @@ using Steeltoe.CloudFoundry.Connector.MySql.EFCore;
 using Timesheets;
 using Pivotal.Discovery.Client;
 using Steeltoe.Common.Discovery;
+using Steeltoe.CircuitBreaker.Hystrix;cl
 
 namespace TimesheetsServer
 {
@@ -39,7 +40,7 @@ namespace TimesheetsServer
                 };
 
                 var logger = sp.GetService<ILogger<ProjectClient>>();
-+               return new ProjectClient(httpClient, logger);
+               return new ProjectClient(httpClient, logger);
             });
             services.AddDiscoveryClient(Configuration);
         }
