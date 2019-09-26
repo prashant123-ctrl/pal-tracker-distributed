@@ -6,8 +6,8 @@
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Pivotal.Discovery.ClientCore" Version="2.1.1" />
-   <ProjectReference Include="Steeltoe.Extensions.Configuration.CloudFoundryCore" Version="2.1.1" />   
+    <PackageReference Include="Pivotal.Discovery.ClientCore" Version="2.1.1" /> 
+    <PackageReference Include="Steeltoe.Extensions.Configuration.CloudFoundryCore" Version="2.1.1" />   
     <ProjectReference Include="../../Components/Accounts/Accounts.csproj" />
     <ProjectReference Include="../../Components/Projects/Projects.csproj" />
     <ProjectReference Include="../../Components/Users/Users.csproj" />
@@ -17,6 +17,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.4" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.1.1" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="2.1.1" />    
   </ItemGroup>
 </Project>
